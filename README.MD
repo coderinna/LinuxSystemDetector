@@ -1,10 +1,12 @@
 # LinuxSystemDetector – avoin graafinen tietoturvan tarkastus- ja hallintatyökalu Linuxille
 
-LinuxSystemDetector avoimen lähdekoodin graafinen Linux-työpöytäsovellus, joka kokoaa järjestelmän tietoturvan tarkastelun, analysoinnin ja hallinnan yhteen helppokäyttöiseen käyttöliittymään. Tekninen toteutus perustuu Electroniin, Reactiin ja Node.js:ään.
+LinuxSystemDetector avoimen lähdekoodin graafinen Linux-työpöytäsovellus, joka kokoaa järjestelmän tietoturvan tarkastelun, analysoinnin ja hallinnan yhteen helppokäyttöiseen käyttöliittymään. Tekninen toteutus perustuu **Electroniin, Reactiin ja Node.js:ään**.
 
-Linux-järjestelmien tietoturvan tarkastelu perustuu nykyisin suurelta osin erillisiin komentorivityökaluihin. Esimerkiksi avoimien porttien, käynnissä olevien palveluiden, SSH-kirjautumisten, tiedostojen käyttöoikeuksien ja järjestelmäpalveluiden tarkastelu vaatii käyttäjältä komentojen ja niiden tulosten tuntemusta.
+Linux-järjestelmien tietoturvan tarkastelu perustuu nykyisin suurelta osin erillisiin komentorivityökaluihin ja järjestelmänhallintaohjelmiin. Esimerkiksi avoimien verkkoporttien, käynnissä olevien palveluiden, SSH-kirjautumisten, tiedostojen käyttöoikeuksien ja järjestelmäpalveluiden tarkastelu tapahtuu useilla eri työkaluilla, kuten UFW:llä ja Lynisillä. Tietojen kokoaminen ja tulosten ymmärtäminen edellyttävät käyttäjältä usein komentojen, työkalujen ja Linux-järjestelmän tuntemusta.
 
-Linux System Inspector pyrkii madaltamaan tätä kynnystä. Sovellus näyttää käyttäjälle tarkistuksessa suoritettavan komennon ennen sen ajamista, selittää komennon tarkoituksen ja antaa käyttäjän käynnistää tarkistuksen itse. Tulokset esitetään graafisesti ja niihin liitetään ymmärrettävä analyysi.
+LinuxSystemDetectorin tavoitteena on koota nämä tarkastelut yhteen helppokäyttöiseen graafiseen käyttöliittymään ja tehdä samalla tarkastusprosessista läpinäkyvä käyttäjälle.
+
+Linux System Detector pyrkii madaltamaan tätä kynnystä. Sovellus näyttää käyttäjälle tarkistuksessa suoritettavan komennon ennen sen ajamista, selittää komennon tarkoituksen ja antaa käyttäjän käynnistää tarkistuksen itse. Tulokset esitetään graafisesti ja niihin liitetään ymmärrettävä analyysi.
 
 Tavoitteena on tehdä tästä sovelluksesta helppokäyttöinen jopa Linux-aloittelijoille ja ensi kertalaisille.
 
@@ -14,13 +16,13 @@ Tavoitteena on tehdä tästä sovelluksesta helppokäyttöinen jopa Linux-aloitt
 
 ## Keskeiset toiminnallisuudet
 
-* Avoimet verkkoportit: Kuuntelevien verkkoporttien ja niitä käyttävien prosessien tunnistaminen.
-* SSH-kirjautumiset ja asetukset: SSH-todennusasetusten ja viimeaikaisen kirjautumistoiminnan tarkastelu.
-* Käynnissä olevat palvelut: Aktiivisten järjestelmäpalveluiden näyttäminen.
-* Ajastetut tehtävät: Cron-ajastusten ja niiden suorittamien skriptien tarkastelu.
-* Tiedostojen käyttöoikeudet: Tiedostojen omistajuuden ja käyttöoikeuksien tarkistaminen.
-* systemd-palvelut: Palveluiden määritysten, käynnistysasetusten ja tilan tarkastelu sekä turvallisuusasetusten analysointi.
-* Muutokset edelliseen tarkistukseen: Nykyisten tarkastustulosten vertaaminen aiemmin paikallisesti tallennettuihin tuloksiin.
+* **Avoimet verkkoportit**: Kuuntelevien verkkoporttien ja niitä käyttävien prosessien tunnistaminen.
+* **SSH-kirjautumiset ja asetukset**: SSH-todennusasetusten ja viimeaikaisen kirjautumistoiminnan tarkastelu.
+* **Käynnissä olevat palvelut**: Aktiivisten järjestelmäpalveluiden näyttäminen.
+* **Ajastetut tehtävät**: Cron-ajastusten ja niiden suorittamien skriptien tarkastelu.
+* **Tiedostojen käyttöoikeudet**: Tiedostojen omistajuuden ja käyttöoikeuksien tarkistaminen.
+* **systemd-palvelut**: Palveluiden määritysten, käynnistysasetusten ja tilan tarkastelu sekä turvallisuusasetusten analysointi.
+* **Muutokset edelliseen tarkistukseen**: Nykyisten tarkastustulosten vertaaminen aiemmin paikallisesti tallennettuihin tuloksiin.
 
 ## Keskeiset suunnitteluperiaatteet
 
