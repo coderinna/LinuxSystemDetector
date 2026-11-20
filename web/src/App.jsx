@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero.jsx';
 import Overview from './components/Overview/Overview.jsx';
 import Info from './components/Info/Info.jsx';
 import LanguageSelector from './components/LanguageSelector/LanguageSelector.jsx';
+import ProjectPreview from './components/ProjectPreview/ProjectPreview.jsx';
 import { translations } from './data/translations.js';
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
     setLanguage={setLanguage}
 />
             <Hero t={t} />
-
+<ProjectPreview />
             <Overview t={t} />
 
             <Info t={t} />

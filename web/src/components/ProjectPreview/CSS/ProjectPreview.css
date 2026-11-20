@@ -1,0 +1,43 @@
+.project-preview {
+    width: 100%;
+    margin: 60px auto;
+    padding: 10px;
+
+    background: linear-gradient(145deg, #202633, #1b202b);
+    border: 1px solid #303b4d;
+    border-radius: 18px;
+
+    overflow: hidden;
+}
+
+.project-preview-content {
+    margin-bottom: 20px;
+}
+
+.section-label {
+    display: inline-block;
+
+    color: #60a5fa;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.project-preview-image {
+    width: 100%;
+}
+
+.project-preview-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+@media (max-width: 800px) {
+    .project-preview {
+        margin: 35px auto;
+        padding: 6px;
+    }
+}
