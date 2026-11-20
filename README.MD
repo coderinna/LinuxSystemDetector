@@ -66,3 +66,45 @@ Hankkeen tuloksena syntyvä ohjelmisto on tarkoitus julkaista avoimena lähdekoo
 ## Tarkastuksen lopputulos
 
 LinuxSystemDetectorin tavoitteena on muodostaa käyttäjälle helposti ymmärrettävä tilannekuva Linux-järjestelmän tietoturvasta, sen keskeisistä suojausasetuksista ja mahdollisista poikkeamista – ilman, että käyttäjältä edellytetään syvällistä Linux-osaamista. Kaikki perus palvelut ns. "saman katon alta".
+
+## Sovelluksen riippuvuudet
+
+### electron
+Työpöytäsovellus.
+
+Electron muodostaa LinuxSystemDetectorin varsinaisen työpöytäsovelluksen rungon.
+
+### vite
+React-kehityspalvelin + build-työkalu.
+
+Viteä käytetään React-käyttöliittymän kehittämiseen ja tuotantoversion rakentamiseen.
+
+### @vitejs/plugin-react
+React-tuki Vitelle.
+
+Lisää Viteen tarvittavan tuen Reactille ja JSX-syntaksille.
+
+### concurrently
+Käynnistää Viten ja Electronin yhtä aikaa.
+
+Mahdollistaa käyttöliittymän kehityspalvelimen ja Electron-sovelluksen käynnistämisen yhdellä komennolla.
+
+### wait-on
+Odottaa, että Vite on valmis.
+
+Varmistaa, että Electron käynnistyy vasta sen jälkeen, kun Viten kehityspalvelin on käynnissä.
+
+### react
+Käyttöliittymäkirjasto.
+
+Reactilla rakennetaan LinuxSystemDetectorin graafinen käyttöliittymä ja sen eri näkymät.
+
+### react-dom
+Reactin käyttö selainpohjaisessa käyttöliittymässä.
+
+Vastaa React-sovelluksen renderöimisestä HTML-dokumentin käyttöliittymään.
+
+### Node.js
+Sovelluksen taustalla toimiva JavaScript-ympäristö.
+
+Node.js mahdollistaa Linux-järjestelmän komentojen ja järjestelmätietojen käsittelyn Electronin kautta.
