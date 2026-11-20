@@ -1,20 +1,8 @@
 
-// reac käynnistys
+// react käynnistys
 
 ~/GitHub/LinuxSystemDetector/web$
 npx vite --config vite.config.js
 http://localhost:5174/LinuxSystemDetector/
-
-// html käynnistys
-1. Terminaali 1 – käynnistä palvelin
-
-cd ~/GitHub/LinuxSystemDetector
-python3 -m http.server 8000
-
-
-2. Avaa selain toisessa terminaalissa
-
-xdg-open http://localhost:8000/web/
-Sammutus: Palaa ensimmäiseen terminaaliin ja paina Ctrl + C.
 
 http://localhost:8000/web/
