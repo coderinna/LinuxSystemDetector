@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Hero from './components/Hero.jsx';
 import Overview from './components/Overview.jsx';
 import Info from './components/Info.jsx';
-
+import LanguageSelector from './components/LanguageSelector.jsx';
 import { translations } from './data/translations.js';
 
 function App() {
@@ -13,26 +13,10 @@ function App() {
 
     return (
         <div className="container">
-
-            <div className="language-selector">
-                <button
-                    className={language === 'fi' ? 'active' : ''}
-                    onClick={() => setLanguage('fi')}
-                >
-                    FI
-                </button>
-
-                <span>|</span>
-                
-                <button
-                    className={language === 'en' ? 'active' : ''}
-                    onClick={() => setLanguage('en')}
-                >
-                    EN
-                </button>
-
-            </div>
-
+<LanguageSelector
+    language={language}
+    setLanguage={setLanguage}
+/>
             <Hero t={t} />
 
             <Overview t={t} />

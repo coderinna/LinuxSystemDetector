@@ -119,29 +119,6 @@ footer {
     }
 }
 
-.language-selector {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-    color: #6f7685;
-}
-
-.language-selector button {
-    border: none;
-    background: transparent;
-    color: #aeb4c0;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 6px;
-}
-
-.language-selector button:hover,
-.language-selector button.active {
-    color: #3b82f6;
-}
-
 .overview {
     scroll-margin-top: 30px;
 }
