@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
-import Hero from './components/Hero.jsx';
-import Overview from './components/Overview.jsx';
-import Info from './components/Info.jsx';
-import LanguageSelector from './components/LanguageSelector.jsx';
+import Hero from './components/Hero/Hero.jsx';
+import Overview from './components/Overview/Overview.jsx';
+import Info from './components/Info/Info.jsx';
+import LanguageSelector from './components/LanguageSelector/LanguageSelector.jsx';
 import { translations } from './data/translations.js';
 
 function App() {
